@@ -1,0 +1,67 @@
+@mixin animation($var...) {
+	-webkit-animation: $var; /* Safari 4+ */
+	-moz-animation:    $var; /* Fx 5+ */
+	-o-animation:      $var; /* Opera 12+ */
+	animation:         $var; /* IE 10+, Fx 29+ */
+}
+
+@mixin animation-delay($var...) {
+    -webkit-animation-delay: $var;
+    animation-delay: $var;
+}
+
+@mixin animation-timing-function($var...) {
+    -webkit-animation-timing-function: $var;
+    animation-timing-function: $var;
+}
+
+@mixin transform($var...) {
+    -webkit-transform: $var;
+    transform: $var;
+}
+
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
+@mixin box-shadow($var...) {
+	-webkit-box-shadow: $var;
+	-moz-box-shadow: $var;
+	box-shadow: $var;
+}
+
+@mixin transition($var...) {
+    -webkit-transition: $var;
+    -moz-transition: $var;
+    -o-transition: $var;
+    transition: $var;
+}
+
+@mixin placeholder() {
+    ::input-placeholder {
+        @content;
+    }
+    ::-webkit-input-placeholder {
+        @content;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+        @content;
+    }
+    ::-moz-placeholder {  /* Firefox 19+ */
+        @content;
+    }
+    :-ms-input-placeholder {  
+        @content;
+    }
+}

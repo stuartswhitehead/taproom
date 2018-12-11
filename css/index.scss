@@ -1,0 +1,39 @@
+@import 'base';
+
+/* Full width */
+.container {
+	margin: 0 auto;
+	max-width: $widthFull;
+	overflow: hidden;
+	padding: 3rem 0 0;
+	position: relative;
+}
+
+/* Large width */
+@media only screen and (max-width: 84em) {
+	.container {
+		max-width: $widthLarge;
+	}
+}
+
+/* Medium width */
+@media only screen and (max-width: 64em) {
+	.container {
+		max-width: $widthMedium;
+	}
+}
+
+/* Small width */
+@media only screen and (max-width: 49em) {
+	.container {
+		max-width: $widthSmall;
+	}
+}
+
+/* XS width */
+@media only screen and (max-width: 30em) {
+	.container {
+		max-width: $widthXS;
+		padding: 11.5rem 1rem 0;
+	}
+}

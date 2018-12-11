@@ -1,0 +1,40 @@
+@import 'reset';
+@import 'mixin';
+
+/* Color Palette */
+
+$font-stack: 'Helvetica Neue', 'Open Sans', Helvetica, Arial, 'Lucida Grande', sans-serif;
+
+/* Responsive breakpoints */
+$widthFull: 79rem;
+$widthLarge: 61rem;
+$widthMedium: 46rem;
+$widthSmall: 29rem;
+$widthXS: 18rem;
+
+html, body {
+    font-family: $font-stack;
+    font-weight: 400;
+    color: black;
+    background: white;
+    height: 100%;
+    width: 100%;
+    font-size: 1rem;
+}
+
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+a:hover {
+	text-decoration: underline;
+}
