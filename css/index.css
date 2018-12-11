@@ -48,10 +48,10 @@ table {
 /* Color Palette */
 /* Responsive breakpoints */
 html, body {
-  font-family: "Helvetica Neue", "Open Sans", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Coming Soon", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 400;
-  color: black;
-  background: white;
+  color: #D5DADB;
+  background: #0D0C0C;
   height: 100%;
   width: 100%;
   font-size: 1rem; }
@@ -78,8 +78,96 @@ a:hover {
   margin: 0 auto;
   max-width: 79rem;
   overflow: hidden;
-  padding: 3rem 0 0;
+  padding: 1.5rem 0 0;
   position: relative; }
+  .container h1, .container h2 {
+    text-align: center; }
+  .container h1 {
+    font-family: 'Permanent Marker', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #00C2B8; }
+  .container #menu {
+    height: 30rem;
+    width: 100%;
+    background: black;
+    border: 1.5rem solid #392209;
+    margin-top: 1.5rem;
+    padding: 1.5rem; }
+    .container #menu ol {
+      height: 100%;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      list-style: decimal inside;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .container #menu ol li {
+        margin-bottom: 2rem;
+        width: 30%; }
+        .container #menu ol li span {
+          font-size: 1rem; }
+        .container #menu ol li p {
+          text-indent: 1.25rem;
+          font-size: 0.9rem;
+          color: #00F2FF; }
+  .container #bar {
+    position: fixed;
+    left: 2.5%;
+    bottom: 0;
+    height: 23em;
+    width: 95%; }
+    .container #bar #aboveBar {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 8rem;
+      -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+      align-items: baseline; }
+      .container #bar #aboveBar img {
+        height: 10rem; }
+      .container #bar #aboveBar #beerBottles {
+        height: 4.5rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 73%;
+        flex: 0 0 73%; }
+        .container #bar #aboveBar #beerBottles li {
+          -webkit-box-flex: 0;
+          -ms-flex: 0 0 4rem;
+          flex: 0 0 4rem;
+          height: 100%;
+          text-align: center; }
+          .container #bar #aboveBar #beerBottles li img {
+            height: 100%; }
+    .container #bar #barTop {
+      height: 1.5rem;
+      background: #3B2209;
+      border-radius: 15rem;
+      margin: 0 auto; }
+    .container #bar #barBody {
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(8%, #1e1104), color-stop(30%, #301e0a), to(#392209));
+      background-image: -webkit-linear-gradient(#1e1104 8%, #301e0a 30%, #392209 100%);
+      background-image: -o-linear-gradient(#1e1104 8%, #301e0a 30%, #392209 100%);
+      background-image: linear-gradient(#1e1104 8%, #301e0a 30%, #392209 100%);
+      height: 13.5rem;
+      width: 87%;
+      margin: 0 auto; }
 
 /* Large width */
 @media only screen and (max-width: 84em) {

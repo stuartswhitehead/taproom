@@ -2,8 +2,10 @@
 @import 'mixin';
 
 /* Color Palette */
+$backgroundGray: #0D0C0C;
+$textWhite: #D5DADB;
 
-$font-stack: 'Helvetica Neue', 'Open Sans', Helvetica, Arial, 'Lucida Grande', sans-serif;
+$font-stack: 'Coming Soon', Helvetica, Arial, 'Lucida Grande', sans-serif;
 
 /* Responsive breakpoints */
 $widthFull: 79rem;
@@ -15,8 +17,8 @@ $widthXS: 18rem;
 html, body {
     font-family: $font-stack;
     font-weight: 400;
-    color: black;
-    background: white;
+    color: $textWhite;
+    background: $backgroundGray;
     height: 100%;
     width: 100%;
     font-size: 1rem;

@@ -5,8 +5,103 @@
 	margin: 0 auto;
 	max-width: $widthFull;
 	overflow: hidden;
-	padding: 3rem 0 0;
+	padding: 1.5rem 0 0;
 	position: relative;
+
+	h1, h2 {
+		text-align: center;
+	}
+
+	h1 {
+		font-family: 'Permanent Marker', Helvetica, Arial, 'Lucida Grande', sans-serif;
+		font-size: 3rem;
+		margin-bottom: 1rem;
+		color: #00C2B8;
+	}
+
+	#menu {
+		height: 30rem;
+		width: 100%;
+		background: black;
+		border: 1.5rem solid #392209;
+		margin-top: 1.5rem;
+		padding: 1.5rem;
+
+		ol {
+			height: 100%;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			list-style: decimal inside;
+			justify-content: space-between;
+
+			li {
+				margin-bottom: 2rem;
+				width: 30%;
+
+				span {
+					font-size: 1rem;
+				}
+
+				p {
+					text-indent: 1.25rem;
+					font-size: 0.9rem;
+					color: #00F2FF;
+				}
+			}
+		}
+	}
+
+	#bar {
+		position: fixed;
+		left: 2.5%;
+		bottom: 0;
+		height: 23em;
+		width: 95%;
+
+		#aboveBar {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			padding: 0 8rem;
+			align-items: baseline;
+
+			img {
+				height: 10rem;
+			}
+
+			#beerBottles {
+				height: 4.5rem;
+				display: flex;
+				flex: 0 0 73%;
+
+				li {
+					flex: 0 0 4rem;
+					height: 100%;
+					text-align: center;
+
+					img {
+						height: 100%;
+					}
+				}
+			}
+		}
+
+		#barTop {
+			height: 1.5rem;
+			background: #3B2209;
+			border-radius: 15rem;
+			margin: 0 auto;
+		}
+
+		#barBody {
+			background-image: linear-gradient(#1e1104 8%,  #301e0a 30%, #392209 100%);
+			height: 13.5rem;
+			width: 87%;
+			margin: 0 auto;
+		}
+	}
 }
 
 /* Large width */
