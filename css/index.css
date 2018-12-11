@@ -93,7 +93,8 @@ a:hover {
     background: black;
     border: 1.5rem solid #392209;
     margin-top: 1.5rem;
-    padding: 1.5rem; }
+    padding: 1.5rem;
+    min-width: 976px; }
     .container #menu ol {
       height: 100%;
       width: 100%;
@@ -124,7 +125,8 @@ a:hover {
     left: 2.5%;
     bottom: 0;
     height: 23em;
-    width: 95%; }
+    width: 95%;
+    min-width: 1430px; }
     .container #bar #aboveBar {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -168,24 +170,14 @@ a:hover {
       height: 13.5rem;
       width: 87%;
       margin: 0 auto; }
+      .container #bar #barBody p {
+        font-size: 2rem;
+        width: 75%;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 2rem; }
 
 /* Large width */
 @media only screen and (max-width: 84em) {
   .container {
     max-width: 61rem; } }
-
-/* Medium width */
-@media only screen and (max-width: 64em) {
-  .container {
-    max-width: 46rem; } }
-
-/* Small width */
-@media only screen and (max-width: 49em) {
-  .container {
-    max-width: 29rem; } }
-
-/* XS width */
-@media only screen and (max-width: 30em) {
-  .container {
-    max-width: 18rem;
-    padding: 11.5rem 1rem 0; } }
